@@ -20,9 +20,9 @@ import dateparser
 from telethon import *
 from telethon.tl.types import ChatBannedRights
 
-from KristinaBot.events import register
-from KristinaBot.mongo import db
-from KristinaBot import telethn as tbot
+from Pikachu.events import register
+from Pikachu.mongo import db
+from Pikachu import telethn as tbot
 
 nightmod = db.nightmode
 
