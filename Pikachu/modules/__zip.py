@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from KristinaBot import TEMP_DOWNLOAD_DIRECTORY
-from KristinaBot import telethn as client
-from KristinaBot.events import register
+from Pikachu import TEMP_DOWNLOAD_DIRECTORY
+from Pikachu import telethn as client
+from Pikachu.events import register
 
 
 async def is_register_admin(chat, user):
