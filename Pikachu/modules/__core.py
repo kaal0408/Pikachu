@@ -1,13 +1,13 @@
-from KristinaBot import telethn as tbot
-from KristinaBot.events import register
+from Pikachu import telethn as tbot
+from Pikachu.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from KristinaBot import OWNER_ID, DEV_USERS
-from KristinaBot import TEMP_DOWNLOAD_DIRECTORY as path
-from KristinaBot import TEMP_DOWNLOAD_DIRECTORY
+from Pikachu import OWNER_ID, DEV_USERS
+from Pikachu import TEMP_DOWNLOAD_DIRECTORY as path
+from Pikachu import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
 water = './KristinaBot/resources/yone.jpg'
 client = tbot
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./KristinaBot/modules/{}.py".format(input_str)
+    the_plugin_file = "./Pikachu/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
@@ -36,7 +36,7 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-from KristinaBot.events import load_module
+from Pikachu.events import load_module
 import asyncio
 import os
 from datetime import datetime
@@ -55,7 +55,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "KristinaBot/modules/",  # pylint:disable=E0602
+                    "Pikachu/modules/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:
