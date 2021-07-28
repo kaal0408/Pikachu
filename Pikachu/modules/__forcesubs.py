@@ -12,9 +12,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from KristinaBot import DRAGONS as SUDO_USERS
-from KristinaBot import pbot
-from KristinaBot.modules.sql_extended import forceSubscribe_sql as sql
+from Pikachu import DRAGONS as SUDO_USERS
+from Pikachu import pbot
+from Pikachu.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -181,7 +181,7 @@ def config(client, message):
 
 __help__ = """
 *Force Subscribe:*
-❍ Kristina can mute members who are not subscribed your channel until they subscribe
+❍ Pikachu can mute members who are not subscribed your channel until they subscribe
 ❍ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 *Setup*
 *Only creator*
