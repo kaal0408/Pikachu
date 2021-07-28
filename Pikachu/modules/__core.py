@@ -9,7 +9,7 @@ from Pikachu import OWNER_ID, DEV_USERS
 from Pikachu import TEMP_DOWNLOAD_DIRECTORY as path
 from Pikachu import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './KristinaBot/resources/yone.jpg'
+water = './Pikachu/resources/yone.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
