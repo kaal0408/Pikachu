@@ -1,5 +1,5 @@
-from KristinaBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from KristinaBot import DRAGONS
+from Pikachu.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Pikachu import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
