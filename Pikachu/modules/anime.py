@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from KristinaBot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
+from Pikachu import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
