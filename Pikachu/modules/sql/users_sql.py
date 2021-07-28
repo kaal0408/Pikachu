@@ -1,7 +1,7 @@
 import threading
 
-from KristinaBot import dispatcher
-from KristinaBot.modules.sql import BASE, SESSION
+from Pikachu import dispatcher
+from Pikachu.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
