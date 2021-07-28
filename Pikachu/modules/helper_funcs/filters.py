@@ -1,4 +1,4 @@
-from KristinaBot import DEV_USERS, DRAGONS, DEMONS
+from Pikachu import DEV_USERS, DRAGONS, DEMONS
 from telegram import Message
 from telegram.ext import BaseFilter
 
