@@ -25,21 +25,21 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from KristinaBot import BOT_ID
-from KristinaBot.conf import get_int_key, get_str_key
+from Pikachu import BOT_ID
+from Pikachu.conf import get_int_key, get_str_key
 
-# from KristinaBot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from KristinaBot.pyrogramee.telethonbasics import is_admin
-from KristinaBot.events import register
-from KristinaBot import MONGO_DB_URI 
+# from Pikachu.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from Pikachu.pyrogramee.telethonbasics import is_admin
+from Pikachu.events import register
+from Pikachu import MONGO_DB_URI 
 from pymongo import MongoClient
-from KristinaBot.modules.sql_extended.nsfw_watch_sql import (
+from Pikachu.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from KristinaBot import telethn as tbot
+from Pikachu import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -48,7 +48,7 @@ MONGO_DB_URI = get_str_key("MONGO_DB_URI")
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["KristinaBot"]
+db = client["Pikachu"]
 
 async def is_nsfw(event):
     lmao = event
@@ -430,7 +430,7 @@ async def del_profanity(event):
 
 __help__ = """
 <b> Group Guardian: </b>
-✪ Kristina can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ Pikachu can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
  - /gshield <i>on/off</i> - Enable|Disable Porn cleaning
