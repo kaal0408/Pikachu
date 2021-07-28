@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from KristinaBot import DRAGONS, dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.chat_status import (
+from Pikachu import DRAGONS, dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -15,19 +15,19 @@ from KristinaBot.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from KristinaBot.helper_extra.admin_rights import (
+from Pikachu.helper_extra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from KristinaBot.modules.helper_funcs.extraction import (
+from Pikachu.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from KristinaBot.modules.log_channel import loggable
-from KristinaBot.modules.helper_funcs.alternate import send_message
-from KristinaBot.modules.helper_funcs.alternate import typing_action
+from Pikachu.modules.log_channel import loggable
+from Pikachu.modules.helper_funcs.alternate import send_message
+from Pikachu.modules.helper_funcs.alternate import typing_action
 
 
 @run_async
