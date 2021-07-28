@@ -1,8 +1,8 @@
 # © @Mr_Dark_Prince
 import aiohttp
 from pyrogram import filters
-from KristinaBot import pbot
-from KristinaBot.pyrogramee.errors import capture_err
+from Pikachu import pbot
+from Pikachu.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Github"
