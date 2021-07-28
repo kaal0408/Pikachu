@@ -1,12 +1,12 @@
 import random, html
 
-from KristinaBot import dispatcher
-from KristinaBot.modules.disable import (
+from Pikachu import dispatcher
+from Pikachu.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from KristinaBot.modules.sql import afk_sql as sql
-from KristinaBot.modules.users import get_user_id
+from Pikachu.modules.sql import afk_sql as sql
+from Pikachu.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
