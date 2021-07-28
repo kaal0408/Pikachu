@@ -1,6 +1,6 @@
 import threading
 
-from KristinaBot.modules.sql import BASE, SESSION
+from Pikachu.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
 
