@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 
-from KristinaBot.modules.sql import BASE, SESSION
+from Pikachu.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):
