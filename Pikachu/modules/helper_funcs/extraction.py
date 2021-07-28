@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from KristinaBot import LOGGER
-from KristinaBot.modules.users import get_user_id
+from Pikachu import LOGGER
+from Pikachu.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
