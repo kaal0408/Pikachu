@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from KristinaBot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from KristinaBot.events import register
+from Pikachu import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from Pikachu.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
