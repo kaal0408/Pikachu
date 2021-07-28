@@ -1,4 +1,4 @@
-from KristinaBot import telethn as tbot
+from Pikachu import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from KristinaBot import *
-from KristinaBot.events import register
+from Pikachu import *
+from Pikachu.events import register
 
 
 async def is_register_admin(chat, user):
