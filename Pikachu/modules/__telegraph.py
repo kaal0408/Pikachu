@@ -1,12 +1,12 @@
-from KristinaBot.events import register
-from KristinaBot import telethn as tbot
+from Pikachu.events import register
+from Pikachu import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-dipesh = "KRISTINA"
+manjeet = "PIKACHU"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=dipesh)
 auth_url = r["auth_url"]
