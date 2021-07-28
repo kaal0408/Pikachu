@@ -1,11 +1,11 @@
-from KristinaBot import telethn as tbot
+from Pikachu import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from KristinaBot.events import register
+from Pikachu.events import register
 
 langi = "en"
 
