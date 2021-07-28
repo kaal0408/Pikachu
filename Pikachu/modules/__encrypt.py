@@ -1,6 +1,6 @@
-from KristinaBot import telethn as tbot
+from Pikachu import telethn as tbot
 import os
-from KristinaBot.events import register
+from Pikachu.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
