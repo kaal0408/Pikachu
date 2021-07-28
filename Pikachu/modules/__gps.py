@@ -1,8 +1,8 @@
 import os
-from KristinaBot import telethn as tbot
+from Pikachu import telethn as tbot
 from geopy.geocoders import Nominatim
-from KristinaBot.events import register
-from KristinaBot import *
+from Pikachu.events import register
+from Pikachu import *
 from telethon import *
 from telethon.tl import *
 
