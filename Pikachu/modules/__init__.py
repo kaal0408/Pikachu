@@ -1,4 +1,4 @@
-from KristinaBot import LOAD, LOGGER, NO_LOAD
+from Pikachu import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
