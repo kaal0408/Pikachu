@@ -1,4 +1,4 @@
-from KristinaBot import telethn as tbot
+from Pikachu import telethn as tbot
 import os
 
 from gtts import gTTS
@@ -8,9 +8,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from KristinaBot import *
+from Pikachu import *
 
-from KristinaBot.events import register
+from Pikachu.events import register
 
 
 async def is_register_admin(chat, user):
