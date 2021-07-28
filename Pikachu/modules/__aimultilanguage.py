@@ -25,9 +25,9 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from KristinaBot.helper_extra.aichat import add_chat, get_session, remove_chat
-from KristinaBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from KristinaBot import pbot as Kristina
+from Pikachu.helper_extra.aichat import add_chat, get_session, remove_chat
+from Pikachu.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from Pikachu import pbot as Pikachu
 
 translator = google_translator()
 
@@ -36,12 +36,12 @@ def extract_emojis(s):
     return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
 
 BOT_ID = 1812558111
-Kristina_chats = []
+Pikachu_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
 
-@Kristina.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
+@Pikachu.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
 @admins_only
 async def hmm(_, message):
     global asuna_chats
@@ -56,20 +56,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Kristina AI Already Activated In This Chat")
+            await lel.edit("Pikachu AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Kristina AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Pikachu AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Kristina AI Was Not Activated In This Chat")
+            await lel.edit("Pikachu AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Kristina AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Pikachu AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -85,7 +85,7 @@ async def hmm(_, message):
         )
 
 
-@Kristina.on_message(
+@Pikachu.on_message(
     filters.text & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
@@ -119,7 +119,7 @@ async def hmm(client, message):
         result = result.replace("<\/a>", "</a>")
         pro = result
         try:
-            await Kristina.send_chat_action(message.chat.id, "typing")
+            await Pikachu.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
@@ -160,8 +160,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("Kristina", "Aco")
-        test = test.replace("Kristina", "Aco")
+        test = test.replace("Pikachu", "Aco")
+        test = test.replace("Pikachu", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -176,20 +176,20 @@ async def hmm(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Kristina")
+        result = result.replace("Aco", "Pikachu")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         if not "en" in lan and not lan == "":
             pro = translator.translate(pro, lang_tgt=lan[0])
         try:
-            await Kristina.send_chat_action(message.chat.id, "typing")
+            await Pikachu.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
 
 
-@Kristina.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
+@Pikachu.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -230,8 +230,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Kristina", "Aco")
-    test = test.replace("Kristina", "Aco")
+    test = test.replace("Pikachu", "Aco")
+    test = test.replace("Pikachu", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -253,13 +253,13 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Kristina.send_chat_action(message.chat.id, "typing")
+        await Pikachu.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
 
 
-@Kristina.on_message(
+@Pikachu.on_message(
     filters.regex("Kristina|Kristina|huntinbots|hello|hi")
     & ~filters.bot
     & ~filters.via_bot
