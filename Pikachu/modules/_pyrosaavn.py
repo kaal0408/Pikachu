@@ -5,8 +5,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from KristinaBot import pbot as Jebot
-from KristinaBot.pyrogramee.dark import get_arg
+from Pikachu import pbot as Jebot
+from Pikachu.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))
