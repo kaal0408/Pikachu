@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import KristinaBot.modules.sql.notes_sql as sql
-from KristinaBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from KristinaBot.__main__ import DATA_IMPORT
-from KristinaBot.modules.helper_funcs.chat_status import user_admin
-from KristinaBot.modules.helper_funcs.alternate import typing_action
+import Pikachu.modules.sql.notes_sql as sql
+from Pikachu import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Pikachu.__main__ import DATA_IMPORT
+from Pikachu.modules.helper_funcs.chat_status import user_admin
+from Pikachu.modules.helper_funcs.alternate import typing_action
 
-# from KristinaBot.modules.rules import get_rules
-import KristinaBot.modules.sql.rules_sql as rulessql
+# from Pikachu.modules.rules import get_rules
+import Pikachu.modules.sql.rules_sql as rulessql
 
-# from KristinaBot.modules.sql import warns_sql as warnssql
-import KristinaBot.modules.sql.blacklist_sql as blacklistsql
-from KristinaBot.modules.sql import disable_sql as disabledsql
+# from Pikachu.modules.sql import warns_sql as warnssql
+import Pikachu.modules.sql.blacklist_sql as blacklistsql
+from Pikachu.modules.sql import disable_sql as disabledsql
 
-# from KristinaBot.modules.sql import cust_filters_sql as filtersql
-# import KristinaBot.modules.sql.welcome_sql as welcsql
-import KristinaBot.modules.sql.locks_sql as locksql
-from KristinaBot.modules.connection import connected
+# from Pikachu.modules.sql import cust_filters_sql as filtersql
+# import Pikachu.modules.sql.welcome_sql as welcsql
+import Pikachu.modules.sql.locks_sql as locksql
+from Pikachu.modules.connection import connected
 
 
 @run_async
@@ -341,7 +341,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("KristinaBot{}.backup".format(chat_id), "rb"),
+        document=open("Pikachu{}.backup".format(chat_id), "rb"),
         caption="💾*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `KristinaBot-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
@@ -349,7 +349,7 @@ def export_data(update, context):
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("KristinaBot{}.backup".format(chat_id))  # Cleaning file
+    os.remove("Pikachu{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
