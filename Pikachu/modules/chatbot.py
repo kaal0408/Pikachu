@@ -3,14 +3,14 @@ import html
 # AI module using Intellivoid's Coffeehouse API by @TheRealPhoenix
 from time import sleep, time
 
-import KristinaBot.modules.sql.chatbot_sql as sql
+import Pikachu.modules.sql.chatbot_sql as sql
 from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 from coffeehouse.lydia import LydiaAI
-from KristinaBot import AI_API_KEY, OWNER_ID, SUPPORT_CHAT, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import user_admin
-from KristinaBot.modules.helper_funcs.filters import CustomFilters
-from KristinaBot.modules.log_channel import gloggable
+from Pikachu import AI_API_KEY, OWNER_ID, SUPPORT_CHAT, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import user_admin
+from Pikachu.modules.helper_funcs.filters import CustomFilters
+from Pikachu.modules.log_channel import gloggable
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import (
