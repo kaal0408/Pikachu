@@ -1,15 +1,15 @@
 
 import html
 
-from KristinaBot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.chat_status import (
+from Pikachu import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from KristinaBot.modules.sql import cleaner_sql as sql
+from Pikachu.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
