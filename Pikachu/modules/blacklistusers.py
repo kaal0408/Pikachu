@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import KristinaBot.modules.sql.blacklistusers_sql as sql
-from KristinaBot import (
+import Pikachu.modules.sql.blacklistusers_sql as sql
+from Pikachu import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from KristinaBot import (
     WOLVES,
     dispatcher,
 )
-from KristinaBot.modules.helper_funcs.chat_status import dev_plus
-from KristinaBot.modules.helper_funcs.extraction import (
+from Pikachu.modules.helper_funcs.chat_status import dev_plus
+from Pikachu.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from KristinaBot.modules.log_channel import gloggable
+from Pikachu.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -140,7 +140,7 @@ def __user_info__(user_id):
     is_blacklisted = sql.is_user_blacklisted(user_id)
 
     text = "Blacklisted: <b>{}</b>"
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 804329190]:
         return ""
     if user_id == dispatcher.bot.id:
         return ""
