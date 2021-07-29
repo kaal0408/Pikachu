@@ -1,11 +1,11 @@
 import html
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot import dispatcher, DRAGONS
-from KristinaBot.modules.helper_funcs.extraction import extract_user
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu import dispatcher, DRAGONS
+from Pikachu.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import KristinaBot.modules.sql.approve_sql as sql
-from KristinaBot.modules.helper_funcs.chat_status import user_admin
-from KristinaBot.modules.log_channel import loggable
+import Pikachu.modules.sql.approve_sql as sql
+from Pikachu.modules.helper_funcs.chat_status import user_admin
+from Pikachu.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
