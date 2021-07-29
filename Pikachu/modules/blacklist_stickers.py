@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import KristinaBot.modules.sql.blsticker_sql as sql
-from KristinaBot import LOGGER, dispatcher
-from KristinaBot.modules.connection import connected
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.alternate import send_message
-from KristinaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from KristinaBot.modules.helper_funcs.misc import split_message
-from KristinaBot.modules.helper_funcs.string_handling import extract_time
+import Pikachu.modules.sql.blsticker_sql as sql
+from Pikachu import LOGGER, dispatcher
+from Pikachu.modules.connection import connected
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.alternate import send_message
+from Pikachu.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Pikachu.modules.helper_funcs.misc import split_message
+from Pikachu.modules.helper_funcs.string_handling import extract_time
 
-from KristinaBot.modules.log_channel import loggable
-from KristinaBot.modules.warns import warn
+from Pikachu.modules.log_channel import loggable
+from Pikachu.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
