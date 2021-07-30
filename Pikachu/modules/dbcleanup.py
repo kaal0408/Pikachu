@@ -1,9 +1,9 @@
 from time import sleep
 
-import KristinaBot.modules.sql.global_bans_sql as gban_sql
-import KristinaBot.modules.sql.users_sql as user_sql
-from KristinaBot import DEV_USERS, OWNER_ID, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import dev_plus
+import Pikachu.modules.sql.global_bans_sql as gban_sql
+import Pikachu.modules.sql.users_sql as user_sql
+from Pikachu import DEV_USERS, OWNER_ID, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
