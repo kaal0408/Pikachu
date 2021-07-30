@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from KristinaBot import dispatcher, LOGGER, DRAGONS
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from KristinaBot.modules.helper_funcs.chat_status import user_admin
-from KristinaBot.modules.helper_funcs.extraction import extract_text
-from KristinaBot.modules.helper_funcs.filters import CustomFilters
-from KristinaBot.modules.helper_funcs.misc import build_keyboard_parser
-from KristinaBot.modules.helper_funcs.msg_types import get_filter_type
-from KristinaBot.modules.helper_funcs.string_handling import (
+from Pikachu import dispatcher, LOGGER, DRAGONS
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.handlers import MessageHandlerChecker
+from Pikachu.modules.helper_funcs.chat_status import user_admin
+from Pikachu.modules.helper_funcs.extraction import extract_text
+from Pikachu.modules.helper_funcs.filters import CustomFilters
+from Pikachu.modules.helper_funcs.misc import build_keyboard_parser
+from Pikachu.modules.helper_funcs.msg_types import get_filter_type
+from Pikachu.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from KristinaBot.modules.sql import cust_filters_sql as sql
+from Pikachu.modules.sql import cust_filters_sql as sql
 
-from KristinaBot.modules.connection import connected
+from Pikachu.modules.connection import connected
 
-from KristinaBot.modules.helper_funcs.alternate import send_message, typing_action
+from Pikachu.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
