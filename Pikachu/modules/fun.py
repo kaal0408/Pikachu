@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import KristinaBot.modules.fun_strings as fun_strings
-from KristinaBot import dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.chat_status import is_user_admin
-from KristinaBot.modules.helper_funcs.extraction import extract_user
+import Pikachu.modules.fun_strings as fun_strings
+from Pikachu import dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.chat_status import is_user_admin
+from Pikachu.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
@@ -102,7 +102,7 @@ def slap(update: Update, context: CallbackContext):
     hit = random.choice(fun_strings.HIT)
     throw = random.choice(fun_strings.THROW)
 
-    if update.effective_user.id == 1096215023:
+    if update.effective_user.id == 804329190:
         temp = "@NeoTheKitty scratches {user2}"
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
