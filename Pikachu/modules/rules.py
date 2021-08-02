@@ -1,9 +1,9 @@
 from typing import Optional
 
-import KristinaBot.modules.sql.rules_sql as sql
-from KristinaBot import dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import user_admin
-from KristinaBot.modules.helper_funcs.string_handling import markdown_parser
+import Pikachu.modules.sql.rules_sql as sql
+from Pikachu import dispatcher
+from Pikachu.modules.helper_funcs.chat_status import user_admin
+from Pikachu.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
