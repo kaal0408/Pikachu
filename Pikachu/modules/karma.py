@@ -1,7 +1,7 @@
-from KristinaBot import pbot
-from KristinaBot.utils.dbfunc import (update_karma, get_karma, get_karmas,
+from Pikachu import pbot
+from Pikachu.utils.dbfunc import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
-from KristinaBot.utils.filter_groups import karma_positive_group, karma_negative_group
+from Pikachu.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
 
 __MODULE__ = "Karma"
