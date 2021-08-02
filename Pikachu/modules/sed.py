@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from KristinaBot import LOGGER, dispatcher
-from KristinaBot.modules.disable import DisableAbleMessageHandler
-from KristinaBot.modules.helper_funcs.regex_helper import infinite_loop_check
+from Pikachu import LOGGER, dispatcher
+from Pikachu.modules.disable import DisableAbleMessageHandler
+from Pikachu.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
