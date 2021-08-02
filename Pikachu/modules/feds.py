@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import KristinaBot.modules.sql.feds_sql as sql
-from KristinaBot import (
+import Pikachu.modules.sql.feds_sql as sql
+from Pikachu import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from KristinaBot import (
     WOLVES,
     dispatcher,
 )
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.alternate import send_message
-from KristinaBot.modules.helper_funcs.chat_status import is_user_admin
-from KristinaBot.modules.helper_funcs.extraction import (
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.alternate import send_message
+from Pikachu.modules.helper_funcs.chat_status import is_user_admin
+from Pikachu.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from KristinaBot.modules.helper_funcs.string_handling import markdown_parser
+from Pikachu.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -624,7 +624,7 @@ def fed_ban(update: Update, context: CallbackContext):
         message.reply_text("Wolves cannot be fed banned!")
         return
 
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 804329190]:
         message.reply_text("Fool! You can't attack Telegram's native tech!")
         return
 
