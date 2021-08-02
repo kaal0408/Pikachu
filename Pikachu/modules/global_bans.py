@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import KristinaBot.modules.sql.global_bans_sql as sql
-from KristinaBot.modules.sql.users_sql import get_user_com_chats
-from KristinaBot import (
+import Pikachu.modules.sql.global_bans_sql as sql
+from Pikachu.modules.sql.users_sql import get_user_com_chats
+from Pikachu import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from KristinaBot import (
     sw,
     dispatcher,
 )
-from KristinaBot.modules.helper_funcs.chat_status import (
+from Pikachu.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from KristinaBot.modules.helper_funcs.extraction import (
+from Pikachu.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from KristinaBot.modules.helper_funcs.misc import send_to_list
+from Pikachu.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -512,7 +512,7 @@ def __stats__():
 def __user_info__(user_id):
     is_gbanned = sql.is_user_gbanned(user_id)
     text = "Malicious: <b>{}</b>"
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 804329190]:
         return ""
     if user_id == dispatcher.bot.id:
         return ""
