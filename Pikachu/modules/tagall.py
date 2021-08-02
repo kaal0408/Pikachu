@@ -9,8 +9,8 @@
 
 from pyrogram import filters
 
-from KristinaBot.pyrogramee.pluginshelper import admins_only, get_text
-from KristinaBot import pbot
+from Pikachu.pyrogramee.pluginshelper import admins_only, get_text
+from Pikachu import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
