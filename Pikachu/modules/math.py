@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from KristinaBot import dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
+from Pikachu import dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
