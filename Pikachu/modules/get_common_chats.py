@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from KristinaBot import OWNER_ID, dispatcher
-from KristinaBot.modules.helper_funcs.extraction import extract_user
-from KristinaBot.modules.sql.users_sql import get_user_com_chats
+from Pikachu import OWNER_ID, dispatcher
+from Pikachu.modules.helper_funcs.extraction import extract_user
+from Pikachu.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
