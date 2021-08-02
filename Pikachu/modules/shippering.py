@@ -1,5 +1,5 @@
-from KristinaBot import pbot as app
-from KristinaBot.utils.dbfunc import get_couple, save_couple
+from Pikachu import pbot as app
+from Pikachu.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
