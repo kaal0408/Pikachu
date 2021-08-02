@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from KristinaBot import SUPPORT_CHAT, WALL_API, dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
+from Pikachu import SUPPORT_CHAT, WALL_API, dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
