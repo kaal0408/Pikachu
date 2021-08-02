@@ -1,6 +1,6 @@
 import wikipedia
-from KristinaBot import dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
+from Pikachu import dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError
