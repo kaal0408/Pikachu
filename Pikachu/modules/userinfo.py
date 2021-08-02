@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from KristinaBot import (
+from Pikachu import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from KristinaBot import (
     dispatcher,
     sw,
 )
-from KristinaBot.__main__ import STATS, TOKEN, USER_INFO
-import KristinaBot.modules.sql.userinfo_sql as sql
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.sql.global_bans_sql import is_user_gbanned
-from KristinaBot.modules.sql.afk_sql import is_afk, check_afk_status
-from KristinaBot.modules.sql.users_sql import get_user_num_chats
-from KristinaBot.modules.helper_funcs.chat_status import sudo_plus
-from KristinaBot.modules.helper_funcs.extraction import extract_user
-from KristinaBot import telethn as KristinaTelethonClient, TIGERS, DRAGONS, DEMONS
+from Pikachu.__main__ import STATS, TOKEN, USER_INFO
+import Pikachu.modules.sql.userinfo_sql as sql
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.sql.global_bans_sql import is_user_gbanned
+from Pikachu.modules.sql.afk_sql import is_afk, check_afk_status
+from Pikachu.modules.sql.users_sql import get_user_num_chats
+from Pikachu.modules.helper_funcs.chat_status import sudo_plus
+from Pikachu.modules.helper_funcs.extraction import extract_user
+from Pikachu import telethn as PikachuTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -391,21 +391,21 @@ def about_me(update: Update, context: CallbackContext):
 def set_about_me(update: Update, context: CallbackContext):
     message = update.effective_message
     user_id = message.from_user.id
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 804329190]:
         message.reply_text("Error! Unauthorized")
         return
     bot = context.bot
     if message.reply_to_message:
         repl_message = message.reply_to_message
         repl_user_id = repl_message.from_user.id
-        if repl_user_id in [bot.id, 777000, 1087968824] and (user_id in DEV_USERS):
+        if repl_user_id in [bot.id, 777000, 804329190] and (user_id in DEV_USERS):
             user_id = repl_user_id
     text = message.text
     info = text.split(None, 1)
     if len(info) == 2:
         if len(info[1]) < MAX_MESSAGE_LENGTH // 4:
             sql.set_user_me_info(user_id, info[1])
-            if user_id in [777000, 1087968824]:
+            if user_id in [777000, 804329190]:
                 message.reply_text("Authorized...Information updated!")
             elif user_id == bot.id:
                 message.reply_text("I have updated my info with the one you provided!")
