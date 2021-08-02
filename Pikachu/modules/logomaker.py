@@ -1,6 +1,6 @@
-from KristinaBot.events import register
-from KristinaBot import OWNER_ID
-from KristinaBot import telethn as tbot
+from Pikachu.events import register
+from Pikachu import OWNER_ID
+from Pikachu import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
