@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from KristinaBot import StartTime, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import sudo_plus
-from KristinaBot.modules.disable import DisableAbleCommandHandler
+from Pikachu import StartTime, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import sudo_plus
+from Pikachu.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
