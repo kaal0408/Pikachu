@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import KristinaBot.modules.sql.users_sql as sql
-from KristinaBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from KristinaBot.modules.sql.users_sql import get_all_users
+import Pikachu.modules.sql.users_sql as sql
+from Pikachu import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Pikachu.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
@@ -157,7 +157,7 @@ def chat_checker(update: Update, context: CallbackContext):
 
 
 def __user_info__(user_id):
-    if user_id in [777000, 1087968824]:
+    if user_id in [777000, 804329190]:
         return """╘══「 Groups count: <code>???</code> 」"""
     if user_id == dispatcher.bot.id:
         return """╘══「 Groups count: <code>???</code> 」"""
