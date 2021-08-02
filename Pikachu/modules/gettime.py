@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from KristinaBot import TIME_API_KEY, dispatcher
-from KristinaBot.modules.disable import DisableAbleCommandHandler
+from Pikachu import TIME_API_KEY, dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
