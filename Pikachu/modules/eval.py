@@ -6,8 +6,8 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from KristinaBot import LOGGER, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import dev_plus
+from Pikachu import LOGGER, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
