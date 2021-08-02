@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import KristinaBot.modules.sql.locks_sql as sql
-from KristinaBot import dispatcher, DRAGONS, LOGGER
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.chat_status import (
+import Pikachu.modules.sql.locks_sql as sql
+from Pikachu import dispatcher, DRAGONS, LOGGER
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from KristinaBot.modules.log_channel import loggable
-from KristinaBot.modules.connection import connected
-from KristinaBot.modules.sql.approve_sql import is_approved
-from KristinaBot.modules.helper_funcs.alternate import send_message, typing_action
+from Pikachu.modules.log_channel import loggable
+from Pikachu.modules.connection import connected
+from Pikachu.modules.sql.approve_sql import is_approved
+from Pikachu.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
