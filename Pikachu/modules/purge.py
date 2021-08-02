@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from KristinaBot import telethn
-from KristinaBot.modules.helper_funcs.telethn.chatstatus import (
+from Pikachu import telethn
+from Pikachu.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
