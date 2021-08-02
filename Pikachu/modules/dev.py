@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import KristinaBot
+import Pikachu
 
-from KristinaBot import dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import dev_plus
+from Pikachu import dispatcher
+from Pikachu.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -21,9 +21,9 @@ def allow_groups(update: Update, context: CallbackContext):
         update.effective_message.reply_text(f"Current state: {KristinaBot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        KristinaBot.ALLOW_CHATS = True
+        Pikachu.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        KristinaBot.ALLOW_CHATS = False
+        Pikachu.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
