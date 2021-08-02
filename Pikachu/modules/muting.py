@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from KristinaBot import LOGGER, TIGERS, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import (
+from Pikachu import LOGGER, TIGERS, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from KristinaBot.modules.helper_funcs.extraction import (
+from Pikachu.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from KristinaBot.modules.helper_funcs.string_handling import extract_time
-from KristinaBot.modules.log_channel import loggable
+from Pikachu.modules.helper_funcs.string_handling import extract_time
+from Pikachu.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
