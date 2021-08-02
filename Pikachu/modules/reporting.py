@@ -1,9 +1,9 @@
 import html
 
-from KristinaBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from KristinaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from KristinaBot.modules.log_channel import loggable
-from KristinaBot.modules.sql import reporting_sql as sql
+from Pikachu import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from Pikachu.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Pikachu.modules.log_channel import loggable
+from Pikachu.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
