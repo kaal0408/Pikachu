@@ -1,6 +1,6 @@
-from KristinaBot.modules.helper_funcs.chat_status import user_admin
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot import dispatcher
+from Pikachu.modules.helper_funcs.chat_status import user_admin
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
