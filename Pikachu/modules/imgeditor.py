@@ -1,5 +1,5 @@
 # By @TroJanzHEX
-# Improved by KristinaBot
+# Improved by Pikachu
 
 from pyrogram import filters
 from pyrogram.types import (
@@ -18,7 +18,7 @@ from KristinaBot.ImageEditor.edit_1 import (  # pylint:disable=import-error
     mix,
     normal_blur,
 )
-from KristinaBot.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from Pikachu.ImageEditor.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -28,13 +28,13 @@ from KristinaBot.ImageEditor.edit_2 import (  # pylint:disable=import-error
     sepia_mode,
     sticker,
 )
-from KristinaBot.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from Pikachu.ImageEditor.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from KristinaBot.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from Pikachu.ImageEditor.edit_4 import (  # pylint:disable=import-error
     inverted,
     removebg_plain,
     removebg_sticker,
@@ -44,7 +44,7 @@ from KristinaBot.ImageEditor.edit_4 import (  # pylint:disable=import-error
     rotate_270,
     round_sticker,
 )
-from KristinaBot.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from Pikachu.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -56,7 +56,7 @@ from KristinaBot.ImageEditor.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from KristinaBot.utils.pyrogram import pbot as Client
+from Pikachu.utils.pyrogram import pbot as Client
 
 lel = 00000000
 # pylint:disable=import-error
