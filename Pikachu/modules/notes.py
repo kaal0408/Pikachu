@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import KristinaBot.modules.sql.notes_sql as sql
-from KristinaBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from KristinaBot.modules.disable import DisableAbleCommandHandler
-from KristinaBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from KristinaBot.modules.helper_funcs.chat_status import user_admin, connection_status
-from KristinaBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from KristinaBot.modules.helper_funcs.msg_types import get_note_type
-from KristinaBot.modules.helper_funcs.string_handling import (
+import Pikachu.modules.sql.notes_sql as sql
+from Pikachu import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from Pikachu.modules.disable import DisableAbleCommandHandler
+from Pikachu.modules.helper_funcs.handlers import MessageHandlerChecker
+from Pikachu.modules.helper_funcs.chat_status import user_admin, connection_status
+from Pikachu.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Pikachu.modules.helper_funcs.msg_types import get_note_type
+from Pikachu.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
