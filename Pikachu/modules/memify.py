@@ -10,9 +10,9 @@ import textwrap
 
 import os
 
-from KristinaBot.events import register
+from Pikachu.events import register
 
-from KristinaBot import (
+from Pikachu import (
 
     LOGGER,
 
@@ -22,7 +22,7 @@ from KristinaBot import (
 
 
 
-from KristinaBot import telethn as bot
+from Pikachu import telethn as bot
 
 
 Credit = "This Plugin Made by Kittu (@A_viyu), if you're using this code in your bot. there is no issue but don't remove this line" 
