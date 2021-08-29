@@ -10,7 +10,7 @@ from pyrogram.types import (
 )
 
 # By @TroJanzHEX
-from KristinaBot.ImageEditor.edit_1 import (  # pylint:disable=import-error
+from Pikachu.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
