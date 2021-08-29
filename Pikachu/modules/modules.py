@@ -98,7 +98,7 @@ def unload(update: Update, context: CallbackContext):
     )
 
     try:
-        imported_module = importlib.import_module("KristinaBot.modules." + text)
+        imported_module = importlib.import_module("Pikachu.modules." + text)
     except:
         unload_messasge.edit_text("Does that module even exist?")
         return
