@@ -260,7 +260,7 @@ async def inuka(client, message):
 
 
 @Pikachu.on_message(
-    filters.regex("Kristina|Kristina|huntinbots|hello|hi")
+    filters.regex("Pikachu|Pikachu|huntinbots|hello|hi")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -308,8 +308,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Kristina", "Aco")
-    test = test.replace("Kristina", "Aco")
+    test = test.replace("Pikachu", "Aco")
+    test = test.replace("Pikachu", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -331,7 +331,7 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Kristina.send_chat_action(message.chat.id, "typing")
+        await Pikachu.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
