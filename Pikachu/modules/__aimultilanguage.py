@@ -1,6 +1,6 @@
 #    Copyright (C) 2020-2021 by @AmarnathCdj & @InukaAsith
 #    Chatbot system written by @AmarnathCdj databse added and recoded for pyrogram by @InukaAsith
-#    This programme is a part of Kristina (TG bot) project
+#    This programme is a part of Pikachu (TG bot) project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -35,7 +35,7 @@ translator = google_translator()
 def extract_emojis(s):
     return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
 
-BOT_ID = 1812558111
+BOT_ID = 1822641510
 Pikachu_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
