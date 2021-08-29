@@ -100,7 +100,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./KristinaBot/resources/Maghrib.ttf"
+        fnt = "./Pikachu/resources/Maghrib.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
