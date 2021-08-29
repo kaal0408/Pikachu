@@ -80,7 +80,7 @@ def remove_chat(update: Update, context: CallbackContext):
 
 def check_message(context: CallbackContext, message):
     reply_msg = message.reply_to_message
-    if message.text.lower() == "kristina ":
+    if message.text.lower() == "Pikachu ":
         return True
     if reply_msg:
         if reply_msg.from_user.id == context.bot.get_me().id:
@@ -143,7 +143,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 __help__ = """
 *Chatbot*
-Kristina  AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+Pikachu  AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
   • /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
   • /chatbot EN : Enables English only chatbot
  
