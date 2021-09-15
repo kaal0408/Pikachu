@@ -6,7 +6,7 @@ gtts
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
-sqlalchemy==1.3.23
+sqlalchemy==1.3.20
 psycopg2-binary
 feedparser
 hachoir
@@ -19,8 +19,8 @@ psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
 CurrencyConverter
-#googletrans
-google_trans_new
+googletrans
+google-trans-new==1.1.9
 jikanpy
 speedtest-cli
 coffeehouse==2.2.4
@@ -28,7 +28,7 @@ regex
 bleach
 git+https://github.com/starry69/python-markdown2.git
 wikipedia
-telethon==1.16.4
+telethon==1.22.0
 telegraph
 heroku3
 spamwatch
@@ -44,7 +44,7 @@ youtube_search_python
 youtube_search
 asyncio
 dateparser==1.0.0
-pymongo==3.11.0
+pymongo
 dnspython
 secureme
 apscheduler
@@ -59,11 +59,17 @@ lyricsgenius
 tswift
 envparse
 fontTools
-
+aiofiles
+gpytranslate
+Python_ARQ
 #profanity (Credits to Julia)
 better_profanity
 textblob 
 nudepy
-
 motor
 cloudscraper
+Ffmpeg
+#ImageEditor
+glitch_this
+NumPy
+opencv-python-headless
