@@ -13,7 +13,7 @@ import random
 import json
 import os
 import re
-from Pikachu import Pikachu
+from Pikachu.events import register
 
 COLORS = [
     "#F07975", "#F49F69", "#F9C84A", "#8CC56E", "#6CC7DC", "#80C1FA", "#BCB3F9", "#E181AC"]
@@ -375,7 +375,7 @@ async def replied_user(draw, tot, text, maxlength, title):
                 draw.text((180 + space, 132), letter, font=textfont, fill="white")
                 space += textfont.getsize(letter)[0]
                 
-@kristinabot(pattern="^/q")
+@register(pattern="^/q")
 async def _(event):
     if event.fwd_from:
         return
