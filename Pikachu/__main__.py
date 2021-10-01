@@ -75,12 +75,9 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg).
-`💎 I am Pikachu bot with ultra feature.`
-`💎Add me in your group ,I will help u to manage your group.`
-`💎If u find error then report use , pikachu support[https://t.me/PikachuX_Support].`
-`💎 Click /help  to see my feature.`
-`💎 My Userbot Group is Lucifer[t.me/Lucifer_support_group]`
-`💎 Powered By Manjeet Singh`  
+`ʜᴇʟʟᴏ 🤗, ɪᴍ píkαchu  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.`
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ!` ʜɪᴛ /help 
+`➪ Pᴏᴡᴇʀᴇᴅ ʙʏ 𝔪𝔞𝔫𝔧𝔢𝔢𝔱 𝔰𝔧𝔫𝔤𝔥`
 """
 
 buttons = [
