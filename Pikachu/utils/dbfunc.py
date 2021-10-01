@@ -1,7 +1,6 @@
 from Pikachu.mongo import db
 from typing import Dict, List, Union
-
-
+update_karma
 coupledb = db.couple
 
 
