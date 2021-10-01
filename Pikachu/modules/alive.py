@@ -3,7 +3,7 @@ import re, os
 from Pikachu.events import register
 from Pikachu import telethn as tbot
 from Pikachu import telethn as tgbot
-PHOTO = "https://telegra.ph/file/5fa6923ec75985dc0cb6f.jpg"
+PHOTO = "https://telegra.ph/file/2a48e69b582bbccc4c73c.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
   PIKACHU = event.sender.first_name
