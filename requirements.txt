@@ -68,7 +68,7 @@ textblob
 nudepy
 motor
 cloudscraper
-Ffmpeg
+ffmpeg
 #ImageEditor
 glitch_this
 NumPy
