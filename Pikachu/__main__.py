@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʟʟᴏ [🤗](Hello I'm Pikachu Bot).
+ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg).
 `💎 I am Pikachu bot with ultra feature.`
 `💎Add me in your group ,I will help u to manage your group.`
 `💎If u find error then report use , pikachu support[https://t.me/PikachuX_Support].`
