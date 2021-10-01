@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/5fa6923ec75985dc0cb6f.jpg), ɪᴍ Pikachu ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ created by Manjeet[t.me/Murat_30_God]).
+ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/2a48e69b582bbccc4c73c.jpg), ɪᴍ Pikachu ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ created by Manjeet[t.me/Murat_30_God]).
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help   
 """
 
@@ -96,10 +96,10 @@ buttons = [
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [Pikachu🙋‍♀️](https://telegra.ph/file/5fa6923ec75985dc0cb6f.jpg) 
+`ʜɪ.. ɪ'ᴍ` [Pikachu🙋‍♀️](https://telegra.ph/file/2a48e69b582bbccc4c73c.jpg) 
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
-pikachu_IMG = "https://telegra.ph/file/5fa6923ec75985dc0cb6f.jpg"
+pikachu_IMG = "https://telegra.ph/file/2a48e69b582bbccc4c73c.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @Murat_30_God \
