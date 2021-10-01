@@ -57,8 +57,8 @@ def no_longer_afk(update: Update, context: CallbackContext):
             return
         firstname = update.effective_user.first_name
         try:
-            options = [https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg
-                "{} is here!",
+            options = [https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg]
+                ["{} is here!",
                 "{} is back!",
                 "{} is now in the chat!",
                 "{} is awake!",
