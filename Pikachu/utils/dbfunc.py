@@ -2,7 +2,7 @@ from Pikachu.mongo import db
 from typing import Dict, List, Union
 from Pikachu.utils.dbfunc import (update_karma, get_karma, get_karmas,
 
-coupledb = db.couple
+> coupledb =>  db.couple
 
 
 # Couple Chooser
