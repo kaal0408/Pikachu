@@ -20,7 +20,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Pikachu/logo/*.jpg')
+    img = Image.open('./Pikachu/logo/20210906_162258.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
@@ -60,7 +60,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Pikachu/logo/*.jpg')
+    img = Image.open('./Pikachu/logo/20210906_162258.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
