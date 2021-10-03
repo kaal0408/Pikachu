@@ -19,8 +19,8 @@ psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
 CurrencyConverter
-googletrans
-google-trans-new==1.1.9
+#googletrans
+google_trans_new
 jikanpy
 speedtest-cli
 coffeehouse==2.2.4
@@ -28,7 +28,7 @@ regex
 bleach
 git+https://github.com/starry69/python-markdown2.git
 wikipedia
-telethon==1.22.0
+telethon
 telegraph
 heroku3
 spamwatch
@@ -58,20 +58,10 @@ pytz
 lyricsgenius
 tswift
 envparse
-fontTools
-aiofiles
-gpytranslate
-Python_ARQ
+
 #profanity (Credits to Julia)
 better_profanity
 textblob 
 nudepy
+
 motor
-cloudscraper
-ffmpeg
-#ImageEditor
-glitch_this
-NumPy
-opencv-python-headless
-ffprobe/avprobe
-ffmpeg/avconv
