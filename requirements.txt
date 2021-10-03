@@ -73,3 +73,6 @@ gpytranslate
 Python_ARQ
 cloudscraper
 ffmpeg
+glitch_this
+NumPy
+opencv-python-headless
