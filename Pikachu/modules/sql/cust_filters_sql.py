@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from AsunaRobot.modules.helper_funcs.msg_types import Types
-from AsunaRobot.modules.sql import BASE, SESSION
+from Pikachu.modules.helper_funcs.msg_types import Types
+from Pikachu.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
