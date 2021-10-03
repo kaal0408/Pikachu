@@ -71,3 +71,5 @@ fontTools
 aiofiles
 gpytranslate
 Python_ARQ
+cloudscraper
+ffmpeg
