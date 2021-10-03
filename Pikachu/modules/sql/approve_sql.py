@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 
-from AsunaRobot.modules.sql import BASE, SESSION
+from Pikachu.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):
