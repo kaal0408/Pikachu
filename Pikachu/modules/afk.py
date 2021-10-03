@@ -58,14 +58,14 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "[{} is here!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[{} is back!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[{} is now in the chat!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[{} is awake!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[{} is back online!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[{} is finally here!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[{} Welcome back!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
-                "[Where is {}?\nIn the chat!](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg)",
+                "[{} is here!](By @@PikachuX_Support)",
+                "[{} is back!](By @PikachuX_Support)",
+                "[{} is now in the chat!](By @PikachuX_Support)",
+                "[{} is awake!](By @PikachuX_Support)",
+                "[{} is back online!](By @PikachuX_Support)",
+                "[{} is finally here!](By @PikachuX_Support)",
+                "[{} Welcome back!](By @PikachuX_Support)",
+                "[Where is {}?\nIn the chat!](By @PikachuX_Support)",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
