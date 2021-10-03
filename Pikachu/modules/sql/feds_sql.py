@@ -1,7 +1,7 @@
 import threading
 
-from AsunaRobot import dispatcher
-from AsunaRobot.modules.sql import BASE, SESSION
+from Pikachu import dispatcher
+from Pikachu.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
