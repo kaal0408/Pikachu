@@ -18,7 +18,7 @@ async def fetch(url):
     return data
 
 
-async def ai_Asuna(url):
+async def ai_Pikachu(url):
     ai_name = "Pikachu.mp3"
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as resp:
