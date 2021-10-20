@@ -99,7 +99,7 @@ def ban( update: Update ) -> str:
 @can_restrict
 @user_admin
 @loggable
-def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
+def temp_ban( update: update) -> str:
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     message = update.effective_message  # type: Optional[Message]
@@ -181,7 +181,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
 @can_restrict
 @user_admin
 @loggable
-def kick(bot: Bot, update: Update, args: List[str]) -> str:
+def kick( update: Update) -> str:
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     message = update.effective_message  # type: Optional[Message]
@@ -233,7 +233,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
 @run_async
 @bot_admin
 @can_restrict
-def kickme(bot: Bot, update: Update):
+def kickme( update: Update):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
         update.effective_message.reply_text("I wish I could... but you're an admin.")
@@ -251,7 +251,7 @@ def kickme(bot: Bot, update: Update):
 @can_restrict
 @user_admin
 @loggable
-def unban(bot: Bot, update: Update, args: List[str]) -> str:
+def unban( update: Update) -> str:
     message = update.effective_message  # type: Optional[Message]
     user = update.effective_user  # type: Optional[User]
     chat = update.effective_chat  # type: Optional[Chat]
