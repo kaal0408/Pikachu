@@ -1,5 +1,6 @@
 import speedtest
 from Pikachu import DEV_USERS, dispatcher
+from Pikachu.modules.disable import DisableAbleCommandHandler
 from Pikachu.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
