@@ -3,8 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from Pikachu import TIGERS, WOLVES, dispatcher
-from Pikachu.modules.helper_funcs.chat_status import (
+from KristinaBot import TIGERS, WOLVES, dispatcher
+from KristinaBot.modules.disable import DisableAbleCommandHandler
+from KristinaBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -13,16 +14,16 @@ from Pikachu.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from Pikachu.modules.helper_funcs.extraction import (
+from KristinaBot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Pikachu.modules.helper_funcs.filters import CustomFilters
-from Pikachu.modules.helper_funcs.misc import split_message
-from Pikachu.modules.helper_funcs.string_handling import split_quotes
-from Pikachu.modules.log_channel import loggable
-from Pikachu.modules.sql import warns_sql as sql
+from KristinaBot.modules.helper_funcs.filters import CustomFilters
+from KristinaBot.modules.helper_funcs.misc import split_message
+from KristinaBot.modules.helper_funcs.string_handling import split_quotes
+from KristinaBot.modules.log_channel import loggable
+from KristinaBot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -44,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from Pikachu.modules.sql.approve_sql import is_approved
+from KristinaBot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"

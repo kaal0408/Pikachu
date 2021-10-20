@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import Pikachu.modules.sql.blacklist_sql as sql
-from Pikachu import dispatcher, LOGGER
-from Pikachu.modules.disable import DisableAbleCommandHandler
-from Pikachu.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Pikachu.modules.helper_funcs.extraction import extract_text
-from Pikachu.modules.helper_funcs.misc import split_message
-from Pikachu.modules.log_channel import loggable
-from Pikachu.modules.warns import warn
-from Pikachu.modules.helper_funcs.string_handling import extract_time
-from Pikachu.modules.connection import connected
-from Pikachu.modules.sql.approve_sql import is_approved
-from Pikachu.modules.helper_funcs.alternate import send_message, typing_action
+import KristinaBot.modules.sql.blacklist_sql as sql
+from KristinaBot import dispatcher, LOGGER
+from KristinaBot.modules.disable import DisableAbleCommandHandler
+from KristinaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from KristinaBot.modules.helper_funcs.extraction import extract_text
+from KristinaBot.modules.helper_funcs.misc import split_message
+from KristinaBot.modules.log_channel import loggable
+from KristinaBot.modules.warns import warn
+from KristinaBot.modules.helper_funcs.string_handling import extract_time
+from KristinaBot.modules.connection import connected
+from KristinaBot.modules.sql.approve_sql import is_approved
+from KristinaBot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
