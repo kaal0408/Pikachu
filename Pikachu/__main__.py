@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🧚‍♀️](https://telegra.ph/file/7274507d4da6ff6f3785d.mp4) `My name is` *Pikachu*
+`Hello` [🧚‍♀️](https://telegra.ph/file/0ac1f1b5c5b2376a14f3f.jpg) `My name is` *Pikachu*
 `I am powerful  group management bot.
 Build by Manjeet for Your Telegram Group , I specialize in managing Entertainment type groups.
 You can find my list of available commands with! Hit` *🔰Commands*   
@@ -84,7 +84,7 @@ You can find my list of available commands with! Hit` *🔰Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/PikachuRobot_Bot?startgroup=true"
+            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/Pikachu_X_Bot?startgroup=true"
         ),
     ],
     [
@@ -98,8 +98,8 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="📺 Star Wolrd Entertainment",
-            url="https://telegram.dog/fire_world_entertainment",
+            text="❤️ Lovely status❤️ ",
+            url="https://telegram.dog/skyverse01",
         ),
     ],
     [
@@ -110,17 +110,17 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💾 Source Code", url="https://github.com/kaal0408/PikachuRobot"
+            text="💾 Source Code", url="https://github.com/kaal0408/Pikachu"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [Pikachu🙋‍♀️](https://telegra.ph/file/2a48e69b582bbccc4c73c.jpg) 
+`ʜɪ.. ɪ'ᴍ` [Pikachu🙋‍♀️](https://telegra.ph/file/0ac1f1b5c5b2376a14f3f.jpg) 
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
-pikachu_IMG = "https://telegra.ph/file/2a48e69b582bbccc4c73c.jpg"
+pikachu_IMG = "https://telegra.ph/file/0ac1f1b5c5b2376a14f3f.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @Murat_30_God \
