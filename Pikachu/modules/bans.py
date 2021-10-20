@@ -36,7 +36,7 @@ from Pikachu.modules.log_channel import gloggable, loggable
 @can_restrict
 @user_admin
 @loggable
-def ban(bot: Bot, update: Update, args: List[str]) -> str:
+def ban( update: Update, args: List[str]) -> str:
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     message = update.effective_message  # type: Optional[Message]
