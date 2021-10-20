@@ -73,26 +73,45 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+
 PM_START_TEXT = """
-ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/cb6367d1ea1a976b4b60a.jpg).
-`ʜᴇʟʟᴏ 🤗, ɪᴍ píkαchu  ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.`
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ!` ʜɪᴛ /help 
-`➪ Pᴏᴡᴇʀᴇᴅ ʙʏ 𝔪𝔞𝔫𝔧𝔢𝔢𝔱 𝔰𝔧𝔫𝔤𝔥`
+`Hello` [🧚‍♀️](https://telegra.ph/file/7274507d4da6ff6f3785d.mp4) `My name is` *Pikachu*
+`I am powerful  group management bot.
+Build by Manjeet for Your Telegram Group , I specialize in managing Entertainment type groups.
+You can find my list of available commands with! Hit` *🔰Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ Pikachu ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/Pikachu_X_bot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="yone_"),
-        InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/PikachuRobot_Bot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="❗ ABOUT", callback_data="pikachu_"),
+        InlineKeyboardButton(text="🔰 COMMANDS", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="🤴 OWNER", url="https://telegram.dog/Murat_30_God"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="📺 Star Wolrd Entertainment",
+            url="https://telegram.dog/fire_world_entertainment",
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="🗨️ Logis", url="https://t.me/PikachuX_logs"),
+        InlineKeyboardButton(
+            text="👥 SUPPORT", url="https://telegram.dog/PikachuX_support"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="💾 Source Code", url="https://github.com/kaal0408/PikachuRobot"
+        ),
     ],
 ]
 
