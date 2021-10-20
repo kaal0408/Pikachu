@@ -15,7 +15,6 @@ from Pikachu import (
     WOLVES,
     dispatcher,
 )
-from Pikachu.modules.disable import DisableAbleCommandHandler
 from Pikachu.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
