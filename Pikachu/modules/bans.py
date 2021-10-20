@@ -431,5 +431,4 @@ __handlers__ = [
     PUNCH_HANDLER,
     UNBAN_HANDLER,
     ROAR_HANDLER,
-    PUNCHME_HANDLER
 ]
