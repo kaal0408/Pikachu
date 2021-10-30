@@ -8,7 +8,7 @@ from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
 import Pikachu.modules.sql.global_bans_sql as sql
-from Pikachu import dispatcher, OWNER_ID, SUPPORT_USERS, STRICT_GBAN
+from Pikachu import dispatcher, OWNER_ID, STRICT_GBAN
 from Pikachu.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from Pikachu.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from Pikachu.modules.helper_funcs.filters import CustomFilters
