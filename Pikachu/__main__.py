@@ -75,16 +75,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🧚‍♀️](https://telegra.ph/file/0ac1f1b5c5b2376a14f3f.jpg) `My name is` *Pikachu*
+`Hello` [🧚‍♀️](https://telegra.ph/file/c595bed6233e0fcdcb9ff.jpg) `My name is` *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*
 `I am powerful  group management bot.
-Build by Manjeet for Your Telegram Group , I specialize in managing Entertainment type groups.
+Build by HEMANTH for Your Telegram Group , I specialize in managing Entertainment type groups.
 You can find my list of available commands with! Hit` *🔰Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/Pikachu_X_Bot?startgroup=true"
+            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/HG_PIKACHU_BOT?startgroup=true"
         ),
     ],
     [
@@ -93,37 +93,37 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤴 OWNER", url="https://telegram.dog/Murat_30_God"
+            text="🤴 OWNER", url="https://telegram.me/HEMANTHGAMING1K"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="❤️ Lovely status❤️ ",
-            url="https://telegram.dog/skyverse01",
+            text="⚡SUPPORT⚡ ",
+            url="https://telegram.me/hgvideobotsupportgroup",
         ),
     ],
     [
         InlineKeyboardButton(text="🗨️ Logis", url="https://t.me/PikachuX_logs"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://telegram.dog/PikachuX_support"
+            text="👥 CHANNEL", url="https://telegram.me/hgbotsupportchannel"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="💾 Source Code", url="https://github.com/kaal0408/Pikachu"
+            text="💾 Source Code", url="https://github.com/hemanth233739/Pikachu"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [Pikachu🙋‍♀️](https://telegra.ph/file/0ac1f1b5c5b2376a14f3f.jpg) 
+`ʜɪ.. ɪ'ᴍ` [⚡Ꭾɪᴋᴀᴄʜᴜ⚡](https://telegra.ph/file/c595bed6233e0fcdcb9ff.jpg) 
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
-pikachu_IMG = "https://telegra.ph/file/0ac1f1b5c5b2376a14f3f.jpg"
+pikachu_IMG = "https://telegra.ph/file/c595bed6233e0fcdcb9ff.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @Murat_30_God \
+ You can support the project via [Paypal](#) or by contacting @HEMANTHGAMING1K \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -370,7 +370,7 @@ def Pikachu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Pikachu_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Pikachu*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -405,8 +405,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Pikachu*
-                 \nHere is the [Source Code](https://github.com/kaal0408/Pikachu) .""",
+            text=""" Hi..🤗 I'm *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*
+                 \nHere is the [Source Code](https://github.com/hemanth233739/Pikachu) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
