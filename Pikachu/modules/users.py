@@ -157,7 +157,7 @@ def chat_checker(update: Update, context: CallbackContext):
 
 
 def __user_info__(user_id):
-    if user_id in [777000, 804329190]:
+    if user_id in [777000, 1087968824]:
         return """╘══「 Groups count: <code>???</code> 」"""
     if user_id == dispatcher.bot.id:
         return """╘══「 Groups count: <code>???</code> 」"""
