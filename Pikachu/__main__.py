@@ -76,9 +76,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello`[.](https://telegra.ph/file/caec4b208541417e7b4e6.jpg) `My name is` *PIKACHU Bot*
-`I am powerful  group management bot I specialize in managing Entertainment type groups.
-You can find my list of available commands with! Hit` *🔰Commands*   
+`hєllσ`[.](https://telegra.ph/file/caec4b208541417e7b4e6.jpg) `mч nαmє íѕ` *PIKACHU Bot*
+`í αm pσwєrfull  grσup mαnαgєmєnt вσt í ѕpєcíαlízє ín mαnαgíng єntєrtαínmєnt tчpє grσupѕ.
+чσu cαn fínd mч líѕt σf αvαílαвlє cσmmαndѕ wíth! hít` *🔰Commands*   
 """
 
 buttons = [
@@ -97,8 +97,8 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🔗 YouTube Channel",
-            url="https://youtube.com/c/pokechuff",
+            text="♥Lovely status♥",
+            url="https://t.me/skyverse01",
         ),
     ],
     [
@@ -111,14 +111,14 @@ buttons = [
 
 HELP_STRINGS = """
 `ʜɪ.. ɪ'ᴍ` [Pikachu] 
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
+`ᴄʟɪᴄk ᴏn ᴛʜє ʙᴜᴛᴛᴏɴѕ ʙᴇʟᴏw ᴛσ ɢᴇt ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏn ᴀʙᴏᴜt ꜱᴘᴇᴄɪꜰɪc ᴍᴏᴅᴜʟᴇѕ..`"""
 
 pikachu_IMG = "https://telegra.ph/file/caec4b208541417e7b4e6.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @Hayat_Murat_30 \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """hєчα, glαd tσ hєαr чσu wαnt tσ dσnαtє!
+ чσu cαn ѕuppσrt thє prσjєct вч cσntαctíng @Hayat_Murat_30 \
+ ѕuppσrtíng íѕnt αlwαчѕ fínαncíαl! \
+ thσѕє whσ cαnnσt prσvídє mσnєtαrч ѕuppσrt αrє wєlcσmє tσ hєlp uѕ dєvєlσp thє вσt αt ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -364,15 +364,15 @@ def Pikachu_about_callback(update, context):
     if query.data == "Pikachu_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Pikachu*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
+                 \n❍ í cαn rєѕtríct uѕєrѕ.
+                 \n❍ í cαn grєєt uѕєrѕ wíth cuѕtσmízαвlє wєlcσmє mєѕѕαgєѕ αnd єvєn ѕєt α grσupѕ rulєѕ.
+                 \n❍ í hαvє αn αdvαncєd αntí-flσσd ѕчѕtєm.
+                 \n❍ í cαn wαrn uѕєrѕ untíl thєч rєαch mαх wαrnѕ, wíth єαch prєdєfínєd αctíσnѕ ѕuch αѕ вαn, mutє, kíck, єtc.
+                 \n❍ í hαvє α nσtє kєєpíng ѕчѕtєm, вlαcklíѕtѕ, αnd єvєn prєdєtєrmínєd rєplíєѕ σn cєrtαín kєчwσrdѕѕ.
+                 \n❍ í chєck fσr adminѕ' pєrmíѕѕíσnѕ вєfσrє єхєcutíng αnч cσmmαnd αnd mσrє ѕtuffѕ
                  \n\n_pikachu licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/kaal0408/pikachu).
-                 \n\nIf you have any question about pikachu, let us know at .""",
+                 \nhєrє íѕ thє [💾Repository](https://github.com/kaal0408/pikachu).
+                 \n\níf чσu hαvє αnч quєѕtíσn αвσut píkαchu, lєt uѕ knσw αt .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
