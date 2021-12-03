@@ -92,7 +92,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤴 OWNER", url="https://t.me/Hayat_Murat_30"
+            text="🤴 Repo", url="https://github.com/kaal0408/Pikachu"
         ),
     ],
     [
@@ -104,6 +104,11 @@ buttons = [
     [
          InlineKeyboardButton(
             text="👥 SUPPORT", url="https://t.me/PikachuX_Support"
+        ),
+    ],
+   [
+         InlineKeyboardButton(
+            text="👥 Owner", url="https://t.me/Hayat_Murat_30"
         ),
     ],
 ]
