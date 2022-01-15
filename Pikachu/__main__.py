@@ -76,35 +76,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`hєllσ`[.](https://telegra.ph/file/caec4b208541417e7b4e6.jpg) `mч nαmє íѕ` *PIKACHU Bot*
+`hєllσ`[.](https://telegra.ph/file/caec4b208541417e7b4e6.jpg) `mч nαmє íѕ` *Clandestine Bot*
 `í αm pσwєrfull  grσup mαnαgєmєnt вσt í ѕpєcíαlízє ín mαnαgíng єntєrtαínmєnt tчpє grσupѕ.
 чσu cαn fínd mч líѕt σf αvαílαвlє cσmmαndѕ wíth! hít` *🔰Commands*   
 """
 
 buttons = [
     [
-        InlineKeyboardButton(
-            text="➕️ ADD ME TO YOUR GROUP ➕️", url="https://t.me/pikachu_X_bot?startgroup=true"
-        ),
-    ],
-    [
         InlineKeyboardButton(text="🔰 COMMANDS", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="🤴 Repo", url="https://github.com/kaal0408/Pikachu"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="♥Lovely status♥",
-            url="https://t.me/skyverse01",
-        ),
-    ],
-    [
-         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/PikachuX_Support"
-        ),
     ],
    [
          InlineKeyboardButton(
@@ -115,7 +94,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [Pikachu] 
+`ʜɪ.. ɪ'ᴍ` [Nigga] 
 `ᴄʟɪᴄk ᴏn ᴛʜє ʙᴜᴛᴛᴏɴѕ ʙᴇʟᴏw ᴛσ ɢᴇt ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏn ᴀʙᴏᴜt ꜱᴘᴇᴄɪꜰɪc ᴍᴏᴅᴜʟᴇѕ..`"""
 
 pikachu_IMG = "https://telegra.ph/file/caec4b208541417e7b4e6.jpg"
