@@ -15,7 +15,7 @@ async def awake(event):
   PIKACHU += "**♡ Kali Linux : yes**\n\n"
   PIKACHU += "**♡ Python : 3.9.7**\n\n"
   PIKACHU += "**♡ Database status : Functional**\n\n"
-  BUTTON = [[Button.url("𝙎𝙐𝙋𝙋𝙊𝙍𝙏", "https://t.me/PikachuX_Support"), Button.url("𝙐𝙋𝘿𝘼𝙏𝙀", "https://t.me/PikachuX_logs")]]
+  BUTTON = [[Button.url("𝙎𝙐𝙋𝙋𝙊𝙍𝙏", "https://t.me/PikachuX_Support"), Button.url("𝙐𝙋𝘿𝘼𝙏𝙀", "https://t.me/Murat_30_God")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
 
 
